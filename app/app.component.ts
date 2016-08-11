@@ -4,13 +4,11 @@
 
 import { Component } from '@angular/core';
 
-import { ZingChart } from './zingchart.component';
 import { Chart } from './chart.model';
 
 @Component({
 	selector: 'my-app',
 	template: '<zingchart *ngFor="let chart of charts" [chart]="chart"></zingchart>',
-	directives: [ZingChart]
 })
 export class AppComponent {
 	charts: Chart[];
